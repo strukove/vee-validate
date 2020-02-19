@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Template Based Validation Framework for Vue.js. I added successes messages to Provides. You can check my pull request to original repository by this link https://github.com/logaretm/vee-validate/pull/2643",
   "author": "Abdelrahman Awad <logaretm1@gmail.com>",
-  "contributors": ["Eugene Strukov <eugene.strukov@gmail.com>"],
+  "contributors": [
+    "Eugene Strukov <eugene.strukov@gmail.com>"
+  ],
   "license": "MIT",
   "module": "dist/vee-validate.esm.js",
   "unpkg": "dist/vee-validate.js",
@@ -19,7 +21,7 @@
     "docs:deploy": "./scripts/deploy.sh",
     "build:locale": "node scripts/locale.js",
     "build:main": "node scripts/main.js",
-    "ts:defs": ".\\scripts\\definitions.sh",
+    "ts:defs": "node scripts/definitions.js",
     "build": "npm run build:main && npm run ts:defs && npm run build:locale",
     "cover": "jest --coverage",
     "prepublishOnly": "npm run build && npm run ts:defs"
@@ -115,7 +117,9 @@
       "jest --maxWorkers=1 --bail --findRelatedTests"
     ]
   },
-  "dependencies": {},
+  "dependencies": {
+    "shelljs": "^0.8.3"
+  },
   "peerDependencies": {
     "vue": "^2.5.18"
   }
