@@ -1,6 +1,6 @@
 {
   "name": "vee-validate-success",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Template Based Validation Framework for Vue.js. I added successes messages to Provides. You can check my pull request to original repository by this link https://github.com/logaretm/vee-validate/pull/2643",
   "author": "Abdelrahman Awad <logaretm1@gmail.com>",
   "contributors": [
